@@ -1,0 +1,8 @@
+This past week at the Turing School of Software and Design we wrote an implementation of the Masterminds board game.  In doing so, I attempted to use Test Driven Development (TDD) to guide my design.  One interesting thing I learned from completing [Mastermind](https://github.com/oorion/mastermind) was that, despite passing all tests, my code didn't function the way I had expected.  
+
+Whereas the [original Mastermind](http://en.wikipedia.org/wiki/Mastermind_(board_game)) had one solution per game, my code was generating a new solution on each turn of the game.  I only discovered this upon writing a ruby module to display the guess statistics each turn.  Specifically, I noticed that, when I entered the same guess twice, I received different guess statistics which should not happen.  
+
+Having tests doesn't prevent your code from functioning in unanticipated ways.
+
+
+
